@@ -41,6 +41,21 @@ function square(x){
 let squareResult = square(5)
 squareResult = squareResult * 2
 console.log(squareResult)
-
+// Получение управления элементом разметки с идентификатором
+// "addProductButton" (главная плавающая кнопка)
 let fab = document.querySelector('#addProductButton')
+// Вывод в консоль браузера
+// информации о найденном элементе
 console.log(fab)
+// Получение управления элементом разметки с идентификатором
+// "addProductButton" (главная плавающая кнопка)
+// без указания селектора, а напрямую по идентификатору
+// +
+// установка обработчика события Клик
+/* addProductButton.onclick = function() {
+	alert('You clicked a floating button');
+} */
+document.addEventListener('DOMContentLoaded', function() {
+	var elems = document.querySelectorAll('.sidenav');
+	var instances = M.Sidenav.init(elems, {});
+})
