@@ -70,12 +70,40 @@
     		</div>
       	</div>
 
-      	<div id="slide-out" class="sidenav">
+      	<!-- <div id="slide-out" class="sidenav">
       		<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+      	</div> -->
+
+      	<div id="newProductModal" class="modal">
+      		<div class="row">
+      			<h6>Add a new product</h6>
+      		</div>
+      		<div class="row">
+      			<form class="col s12">
+      				<div class="row">
+      					<div class="input-field col s12 xl6">
+				          <input placeholder="Title" id="title" type="text" class="validate">
+				          <label for="title">Title</label>
+				        </div>
+				        <div class="input-field col s12 xl6">
+				          <input placeholder="Description" id="description" type="text" class="validate">
+				          <label for="description">Description</label>
+				        </div>
+      				</div>
+					  <button class="btn waves-effect waves-light yellow darken-1" type="submit" name="action">Submit
+					    <i class="material-icons right">send</i>
+					  </button>
+      			</form>
+      		</div>
       	</div>
 
+		<!-- <div id="addProductButton" class="fixed-action-btn">
+		  <a href="#" data-target="slide-out" class="btn-floating btn-large green sidenav-trigger">
+		    <i class="large material-icons">add</i>
+		  </a>
+		</div> -->
 		<div id="addProductButton" class="fixed-action-btn">
-		  <a href="#" data-target="slide-out" class="btn-floating btn-large red sidenav-trigger">
+		  <a href="#newProductModal" class="btn-floating btn-large green modal-trigger">
 		    <i class="large material-icons">add</i>
 		  </a>
 		</div>

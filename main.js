@@ -46,7 +46,7 @@ console.log(squareResult)
 let fab = document.querySelector('#addProductButton')
 // Вывод в консоль браузера
 // информации о найденном элементе
-console.log(fab)
+// console.log(fab)
 // Получение управления элементом разметки с идентификатором
 // "addProductButton" (главная плавающая кнопка)
 // без указания селектора, а напрямую по идентификатору
@@ -56,6 +56,20 @@ console.log(fab)
 	alert('You clicked a floating button');
 } */
 document.addEventListener('DOMContentLoaded', function() {
-	var elems = document.querySelectorAll('.sidenav');
-	var instances = M.Sidenav.init(elems, {});
+	// Находим на разметке элемент с классом sidenav
+	// var sidenav = document.querySelectorAll('.sidenav');
+	// Активируем скрипт из библиотеки materialize.min.js,
+	// чтобы боковая панель могла появляться и скрываться
+	// при клике пользователя на плавающей кнопке с атрибутом data-target="slide-out"
+	// var instances = M.Sidenav.init(sidenav, {});
+
+	const modal = document.querySelectorAll('.modal')
+    const instances = M.Modal.init(modal, {})
+
+    const submit = document.querySelector('#newProductModal form button')
+    // console.log(submit)
+    submit.onclick = function(){
+    	console.log(title.value)
+    	console.log(description.value)
+    }
 })
